@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.RootLayoutController">
+   <left>
+      <AnchorPane maxWidth="6.0" minWidth="6.0" prefHeight="373.0" prefWidth="6.0" style="-fx-background-color: #5f5f5f;" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane maxWidth="6.0" minWidth="6.0" prefHeight="373.0" prefWidth="6.0" style="-fx-background-color: #5f5f5f;" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor></AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane maxHeight="6.0" minHeight="6.0" prefHeight="20.0" prefWidth="6.0" style="-fx-background-color: #5f5f5f;" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor></AnchorPane>
+   </bottom>
+   <top>
+      <HBox prefHeight="27.0" style="-fx-background-color: #5f5f5f;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="toolbar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="2000.0" style="-fx-background-color: #5f5f5f;" styleClass="MenuBar" stylesheets="@RootLayout.css">
+               <menus>
+                  <Menu id="logo" mnemonicParsing="false" styleClass="File" text="   " />
+                  <Menu id="file" mnemonicParsing="false" styleClass="File" text="File">
+                     <items>
+                        <MenuItem id="file" fx:id="close" mnemonicParsing="false" styleClass="Close" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu id="file" mnemonicParsing="false" styleClass="File" text="Edit">
+                     <items>
+                        <MenuItem id="file" mnemonicParsing="false" styleClass="Close" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu id="file" mnemonicParsing="false" styleClass="File" text="Help">
+                     <items>
+                        <MenuItem id="file" fx:id="about" mnemonicParsing="false" styleClass="Close" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button maxWidth="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="35.0" styleClass="Button" stylesheets="@RootLayout.css" text="MIN" textFill="#8f8f8f">
+               <font>
+                  <Font name="Segoe UI Semibold" size="9.0" />
+               </font></Button>
+            <Button id="resize" alignment="CENTER" contentDisplay="RIGHT" maxHeight="21.0" maxWidth="35.0" minHeight="9.0" minWidth="35.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="35.0" styleClass="Button" stylesheets="@RootLayout.css" text="RES" textFill="#8f8f8f">
+               <font>
+                  <Font name="Segoe UI Semibold" size="9.0" />
+               </font></Button>
+            <Button maxWidth="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="35.0" styleClass="Button" stylesheets="@RootLayout.css" text="X" textFill="#8f8f8f">
+               <font>
+                  <Font name="Segoe UI Semibold" size="9.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </top>
+   <effect>
+      <DropShadow blurType="TWO_PASS_BOX" color="#1b1b1b" height="32.62" radius="16.549999999999997" spread="0.19" width="35.58" />
+   </effect>
+</BorderPane>

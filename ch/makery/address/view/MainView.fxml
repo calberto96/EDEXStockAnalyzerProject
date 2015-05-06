@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="858.0" style="-fx-background-color: #606060;" stylesheets="@MainView.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.MainViewController">
+   <children>
+      <VBox prefHeight="42.0" prefWidth="858.0" style="-fx-background-color: #414141;">
+         <effect>
+            <InnerShadow choke="1.0" color="#2f2f2f" height="2.5" offsetY="1.0" radius="0.125" width="0.0" />
+         </effect>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="71.0" prefWidth="38.0" style="-fx-background-image: url(&quot;refresh.png&quot;);" styleClass="Button">
+                     <graphic>
+                        <ImageView fx:id="refresh" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="71.0" prefWidth="38.0" style="-fx-background-image: url(&quot;refresh.png&quot;);" styleClass="Button">
+                     <graphic>
+                        <ImageView fx:id="refresh1" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/csv.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="71.0" prefWidth="38.0" style="-fx-background-image: url(&quot;refresh.png&quot;);" styleClass="Button">
+                     <graphic>
+                        <ImageView fx:id="refresh11" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="41.0" minHeight="322.0" minWidth="700.0" prefHeight="328.0" prefWidth="848.0">
+         <children>
+            <VBox minHeight="93.0" prefHeight="324.0" prefWidth="848.0">
+               <children>
+                  <HBox prefHeight="304.0" prefWidth="848.0">
+                     <children>
+                        <AnchorPane maxHeight="148.0" maxWidth="317.0" minHeight="148.0" minWidth="270.0" prefHeight="148.0" prefWidth="290.0" style="-fx-background-color: #606060; -fx-border-width: 1px; -fx-border-style: solid; -fx-border-color: #414141;">
+                           <children>
+                              <GridPane maxHeight="45.0" minHeight="25.0" prefHeight="25.0" prefWidth="290.0" style="-fx-background-color: #414141; -fx-border-width: 1px; -fx-border-color: #383737;">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="151.0" prefWidth="151.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" prefWidth="173.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="49.0" minHeight="0.0" prefHeight="30.0" prefWidth="164.0" text="normal distribution" textFill="#dddddd" translateY="-3.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button contentDisplay="CENTER" maxHeight="20.0" minHeight="5.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="21.0" style="-fx-background-color: #4a4a4a; -fx-border-width: 1px; -fx-border-style: solid; -fx-border-color: #3b3b3b;" styleClass="Button" text="_" textFill="LIGHTGRAY" translateX="113.0" translateY="-5.0" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <GridPane maxHeight="96.0" minHeight="96.0" prefHeight="96.0" translateY="35.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="9.0" prefWidth="23.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="81.0" prefWidth="85.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="84.0" prefWidth="127.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="32.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="32.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="40.0" prefWidth="80.0" text="∑: " textFill="#eaeaea" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Symbol" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="62.0" prefWidth="80.0" text="σ: " textFill="#eaeaea" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Segoe UI Symbol" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="62.0" prefWidth="80.0" text="wallet: " textFill="#eaeaea" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Segoe UI Symbol" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="portafoglio" maxHeight="20.0" maxWidth="63.0" minHeight="20.0" minWidth="41.0" prefHeight="20.0" prefWidth="63.0" style="-fx-background-color: #444444; -fx-text-fill: #cccccc; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-border-color: #333333; -fx-border-width: 1px;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <contextMenu>
+                                          <ContextMenu>
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                            </items>
+                                          </ContextMenu>
+                                       </contextMenu></ChoiceBox>
+                                    <TextField fx:id="media" prefHeight="27.0" prefWidth="55.0" style="-fx-background-color: #444444; -fx-border-color: #333333; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-text-fill: #cccccc;" GridPane.columnIndex="2" />
+                                    <TextField fx:id="deviazione" style="-fx-background-color: #444444; -fx-border-color: #333333; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-text-fill: #cccccc;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="217.0" prefWidth="539.0" style="-fx-background-color: #606060;" translateY="2.0">
+                           <children>
+                              <StackedAreaChart fx:id="grafico" alternativeColumnFillVisible="true" createSymbols="false" layoutY="6.0" legendVisible="false" maxHeight="1000.0" maxWidth="532.0" minWidth="532.0" prefHeight="312.0" prefWidth="532.0" style="-fx-plot-background-fill: #606060; -fx-text-fill: #ffffff;" title="STANDARD DENSITY GRAPH">
+                                <xAxis>
+                                  <NumberAxis side="BOTTOM" fx:id="xAxis" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="yAxis" side="LEFT" />
+                                </yAxis>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </StackedAreaChart>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

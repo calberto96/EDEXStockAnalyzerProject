@@ -1,0 +1,42 @@
+.MenuBar .label{
+	-fx-text-fill: white;
+}
+
+#file:hover{
+	-fx-background-color: #414141;
+}
+#file:disable{
+	-fx-background-color: #414141;
+}
+#file:enable{
+	-fx-background-color: #414141;
+}
+#file:showing{
+	-fx-background-color: #414141;
+}
+
+#logo{
+	-fx-background-image: url("ico.png")  ;
+	-fx-background-color: #5f5f5f;
+	-fx-background-size: cover;
+}
+#logo:hover{
+	-fx-background-color: #5f5f5f;
+}
+
+.context-menu{
+	-fx-background-color: #5f5f5f;
+	-fx-padding: 1px;
+	
+}
+
+#resize {
+	/*-fx-background-image: url("resize.png")  ;*/
+}
+
+.Button {
+	-fx-background-color:#4a4a4a;
+	-fx-border-width: 1px;
+	-fx-border-style: solid;
+	-fx-border-color: #3b3b3b;
+	}
